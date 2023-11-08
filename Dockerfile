@@ -1,6 +1,6 @@
 FROM node:14
 
-LABEL authors="Yann Mulonda"
+LABEL authors="Demetrio Dela Rosa"
 
 RUN apt-get update && apt-get install -y \
     curl \
