@@ -3,7 +3,7 @@ import express from 'express';
 import routes from './source/routes/route.js';
 
 const app = express();
-const PORT = 3000;
+const PORT = 8080;
 const HOST = '0.0.0.0';
 
 
