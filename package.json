@@ -1,0 +1,35 @@
+{
+  "name": "express-helloworld",
+  "version": "1.0.0",
+  "author": "Demetrio Dela Rosa",
+  "description": "A simple hello world Express/NodeJS application",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "babel-node ./server.js"
+  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:demy2014/Github-Workflow.git"
+  },
+  "bugs": {
+    "url": "git@github.com:demy2014/Github-Workflow.git/issues"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "nodejs",
+    "hello-world"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset": "^1.1.7",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^26.6.3"
+  }
+}
