@@ -1,28 +1,22 @@
-FROM node:14
-
-LABEL authors="Demetrio Dela Rosa"
-
-RUN apt-get update && apt-get install -y \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
-
+FROM node:14 as BUILDER 
+LABEL maintainer="Demetrio Dela Rosa"
 
 WORKDIR /app
 
+# Install app dependencies
+COPY package*.json ./
+RUN npm install
 
-COPY . .
+COPY src ./src
 
-RUN npm install -g npm-check-updates \
-    ncu -u \
-    npm install \
-    npm install express \
-    npm install babel-cli \
-    npm install babel-preset \
-    npm install babel-preset-env
+FROM node:16-alpine
 
+ARG NODE_ENV
 
-COPY package.json ./
+WORKDIR /app
+
+COPY --from=BUILDER /app/ ./
 
 EXPOSE 80
 
-CMD [ "babel-node", "app.js" ]
+CMD [ "npm", "start" ]
