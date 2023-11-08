@@ -1,7 +1,7 @@
 {
   "name": "setup-nodejs",
   "version": "1.0.0",
-  "description": "projeto de demonstração",
+  "description": "take home exam",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
