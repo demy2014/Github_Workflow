@@ -4,8 +4,8 @@
   "description": "take home exam",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src",
-    "test": "jest src/app.test.js"
+    "start": "node src/index.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -29,8 +29,8 @@
     "jest": "^27.3.1"
   },
   "overrides": {
-    "foo":{
-    "source-map": "^0.8.0-beta.0"
+    "foo": {
+      "source-map": "^0.8.0-beta.0"
+    }
   }
-}
 }
