@@ -1,4 +1,4 @@
-FROM node:14 as BUILDER 
+FROM node:16 as BUILDER 
 LABEL maintainer="Demetrio Dela Rosa"
 
 WORKDIR /app
