@@ -4,8 +4,8 @@
   "description": "take home exam",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "test": "jest"
+    "start": "node src",
+    "test": "jest src/app.test.js"
   },
   "repository": {
     "type": "git",
