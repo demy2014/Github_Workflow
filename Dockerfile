@@ -19,4 +19,6 @@ COPY --from=BUILDER /app/ ./
 
 EXPOSE 80
 
-CMD [ "npm", "start" ]
+CMD [ "node", "index.js" ]
+
+#CMD [ "npm", "start" ]
