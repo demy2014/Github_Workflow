@@ -27,10 +27,10 @@ jobs:
     environment: test
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 16.x
+      - name: Use Node.js 
         uses: actions/setup-node@v2
         with:
-          node-version: 16.x
+          node-version: 16
       - run: docker build -t setup-nodejs .
       - run: echo "Deploy"
  
